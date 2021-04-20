@@ -1,0 +1,133 @@
+/* Navbar */
+.navbar {
+  cursor: pointer;
+  animation: movedown 1s linear 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-0);
+    visibility: visible;
+  }
+}
+
+.navbar-brand {
+  font-family: montserrat;
+  font-size: 20px;
+}
+
+.nav-link {
+  font-family: montserrat;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #000000;
+  padding-bottom: 10px;
+  margin-bottom: -13px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/jumbotron.jpg);
+  background-size: cover;
+  height: 600px;
+  padding-top: 7rem;
+}
+
+.jumbotron .display-4 {
+  color: #ffffff;
+  text-align: center;
+  font-family: montserrat;
+  text-shadow: 3px 2px 1px grey;
+  margin-right: 300px;
+  font-weight: 600;
+  font-size: 45px;
+  animation: moveright 1s linear 1s;
+  animation-delay: 2s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveright {
+  0% {
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+  100% {
+    tranform: translateX(-0);
+    visibility: visible;
+  }
+}
+
+.jumbotron .btn {
+  margin-left: 800px;
+  animation: zoomin 1s linear 1s;
+  animation-delay: 2s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(0.5);
+    visibility: visible;
+  }
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+.jumbotron .lead {
+  margin-left: 280px;
+  color: #ffffff;
+  font: montserrat;
+  font: 300;
+  font-size: 30px;
+  animation: moveleft 1s linear 1s;
+  animation-delay: 2s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveleft {
+  0% {
+    transform: translateX(100px);
+    visibility: visible;
+  }
+  100% {
+    tranform: translateX(0);
+    visibility: visible;
+  }
+}
+
+#portfolio {
+  background-color: #323131;
+  height: 700px;
+  font-family: montserrat;
+}
+
+#contact {
+  background-image: url(img/contact.jpg);
+  background-size: cover;
+  height: 600px;
+  font-family: montserrat;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+footer {
+  font-family: montserrat;
+}
